@@ -6,6 +6,6 @@ import './styles.css';
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <FirstApp title='Hola, soy Goku' subTitle={3}/>
+        <FirstApp/>
     </React.StrictMode>
 );

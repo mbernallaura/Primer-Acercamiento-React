@@ -10,7 +10,7 @@ const Saludo = () =>{
     return `Hola ${objeto.title}`;
 }
 
-export const FirstApp = ({title, subTitle}) =>{
+export const FirstApp = ({title, subTitle, name}) =>{
     //!Simpre hay que regresar al menos un Nodo Padre y adentro puede llevar varios elementos
     //!Si no se quiere regresar un div para enviar varios elementos se puede usar <> </>
     //!Para fragentar el codigo"
@@ -20,7 +20,8 @@ export const FirstApp = ({title, subTitle}) =>{
     return (
         <> 
             <h1>{ title }</h1>
-            <p>{ subTitle + 2 }</p>
+            <p>{ subTitle }</p>
+            <p>{ name }</p>
             <p>{ Saludo() }</p>
             {/* <code>{ JSON.stringify( objeto ) }</code> */}
             <div>
@@ -38,5 +39,13 @@ export const FirstApp = ({title, subTitle}) =>{
 //!Se debe instalar para que funcione (npm install prop-types)
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subTitle: PropTypes.number.isRequired,
+    subTitle: PropTypes.string.isRequired,
+}
+
+
+//!Se puede crear nuevos proptypes por medio de default
+FirstApp.defaultProps = {
+    title: 'No hay Titulo',
+    subTitle: 'No hay subtitulo',
+    name: 'Laura'
 }
