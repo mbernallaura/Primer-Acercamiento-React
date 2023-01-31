@@ -8,15 +8,17 @@ const Saludo = () =>{
     return `Hola ${objeto.title}`;
 }
 
-export const FirstApp = () =>{
+export const FirstApp = ({title, subTitle}) =>{
     //!Simpre hay que regresar al menos un Nodo Padre y adentro puede llevar varios elementos
     //!Si no se quiere regresar un div para enviar varios elementos se puede usar <> </>
     //!Para fragentar el codigo"
 
     //!Se puede devolver Funciones que NO SEAN ASYNCRONAS
+    console.log(title);
     return (
         <> 
-            <h1>{ newMessage }</h1>
+            <h1>{ title }</h1>
+            <p>{ subTitle + 2 }</p>
             <p>{ Saludo() }</p>
             {/* <code>{ JSON.stringify( objeto ) }</code> */}
             <div>
