@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const newMessage = [1,2,3,4,5,6,7,8,9];
 const objeto = {
     message: 'Hola Mundo',
@@ -14,7 +16,7 @@ export const FirstApp = ({title, subTitle}) =>{
     //!Para fragentar el codigo"
 
     //!Se puede devolver Funciones que NO SEAN ASYNCRONAS
-    console.log(title);
+
     return (
         <> 
             <h1>{ title }</h1>
@@ -29,4 +31,12 @@ export const FirstApp = ({title, subTitle}) =>{
             </div>
         </>
     )
+}
+
+
+//!Se utlizan los propTypes para hacer validaciones en las variables
+//!Se debe instalar para que funcione (npm install prop-types)
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired,
 }
