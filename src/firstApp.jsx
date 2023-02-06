@@ -45,7 +45,7 @@ FirstApp.propTypes = {
 
 //!Se puede crear nuevos proptypes por medio de default
 FirstApp.defaultProps = {
-    title: 'No hay Titulo',
+    //title: 'No hay Titulo',
     subTitle: 'No hay subtitulo',
     name: 'Laura'
 }
