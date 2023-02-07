@@ -36,7 +36,7 @@ describe('Pruebas en <firstApp/>', () => {
         );
 
         //! getAllByText() = evalua mas de 1 elemento que contenga lo que se le pide y nos manda un arreglo
-        //! con lo que se encontro
+        //! con lo que se encuentra
         expect(getAllByText(subtitle).length).toBe(2);
     })
 });
