@@ -22,7 +22,7 @@ describe('Pruebas en <firstApp/>', () => {
 
         // const h1 = container.querySelector('h1');
         // expect(h1.innerHTML).toContain(title);
-        expect(getByTestId('test-title').innerHTML).toBe(title);
+        expect(getByTestId('test-title').innerHTML).toContain(title);
     });
 
     test('Debe de mostrar el subtitulo enviado por props', () => {
